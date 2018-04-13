@@ -3,7 +3,7 @@ import JSChaCha20 from "js-chacha20";
 if (typeof window.crypto == "undefined") {
 	const rand = makeRand();
 	window.crypto = {
-		getRandomBytes(typedArray) {
+		getRandomValues(typedArray) {
 			for (let i = 0; i < typedArray.length; i++) {
 				typedArray[i] = rand(typedArray.BYTES_PER_ELEMENT);
 			}
