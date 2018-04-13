@@ -14,5 +14,8 @@
 	},
 	"scripts": {
 		"build": "rollup -c rollup.config.js"
+	},
+	"prettier": {
+		"useTabs": true
 	}
 }
