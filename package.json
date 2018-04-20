@@ -13,7 +13,8 @@
 		"rollup-plugin-node-resolve": "^3.0.3"
 	},
 	"scripts": {
-		"build": "rollup -c rollup.config.js"
+		"build": "rollup -c rollup.config.js",
+		"dieharder": "node test/stream.js | dieharder -a -g 200"
 	},
 	"prettier": {
 		"useTabs": true
